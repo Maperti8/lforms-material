@@ -1,0 +1,58 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/src/fhir/R4B/lformsFHIR.js
+/src/fhir/R4/lformsFHIR.js
+/src/fhir/STU3/lformsFHIR.js
+/tmp
+/out-tsc
+/.tmp
+# Only exists if Bazel was run
+/bazel-out
+
+# cypress output
+/test/cypress/downloads
+/test/cypress/screenshots
+/test/cypress/videos
+/cypress
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode
+
+# IDE - VSCode
+.vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+/.angular
+
+# System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+<ng-container *ngIf="item">
+  <textarea id="{{item._elementId}}"
+         [disabled]="item._readOnly"
+         [ngModel]="item.value"
+         (ngModelChange)="onModelChange($event)"
+         placeholder="{{item._placeholder}}"
+         attr.aria-labelledby="label-{{ item._elementId }}"
+         attr.aria-required="{{ item._answerRequired }}"
+         (blur)="lhcDataService.activeRowOnBlur(item)"
+         (focus)="lhcDataService.setActiveRow(item)"
+         >
+  </textarea>
+</ng-container>
